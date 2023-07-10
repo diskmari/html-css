@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <H1>Imagens dinamicas</H1>
+    <p>Tente abrir esse site em varios dispositivos diferentes ou simplesmente aumente e diminua o tamanho do navegador</p>
+<!--IMPORTANTE: AS IMAGENS TEM QUE SER EM SEQUENCIA, DA MENOR PRA MAIOR, A BASE TEM QUE SER A IMAGEM PADRAO(A QUE FICA EMBAIXO)-->
+    <picture>
+        <source media="(max-width: 750px)" srcset="IMGS/FOTO-P.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="IMGS/FOTO-M.png" type="image/png">
+        <img src="IMGS/FOTOG.png" alt="Imagem flexivel">
+    </picture>
+
+    <h1>Reproduzindo Audio</h1>
+    <p>Vamos aprender a reproduzir audios em HTML5.</p>
+    <!--<audio src="midia/happy-mistake.mp3" controls autoplay></audio>
+
+    AUDIOS EXISTENTES: MP3, WAV, OGG-->
+
+
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midia/guanacast-33.mp3" type="audio/ogg">
+        <source src="midia/guanacast-33.mp3" type="audio/wav">
+        <p>Infelizmente seu navegador nao consegue reproduzir audio. <a href="midia/guanacast-33.mp3"> Clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
+
+<!-- NAO USAR AUDIO WAV PQ SAO PESADOS-->
+    
+</body>
+</html>
+        
+        
