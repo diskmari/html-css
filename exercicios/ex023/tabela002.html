@@ -13,17 +13,37 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
             border: 1px solid black;
             padding: 10px;
+            
         
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(60, 60, 60);
+        }
+
         thead, tfoot {
-            background-color: gray;
+            background-color: rgb(60, 60, 60);
             color: white;
+        }
+
+        /* EFEITO ZEBRADO: odd impar / even par*/
+        tbody > tr:nth-child(odd) {
+            background-color: lightgray;
         }
 
         td.num {
@@ -45,10 +65,11 @@
     -->
 
     <table>
+        <caption>Populaçâo das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>Populacao</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">Populacao</th>
             </tr>
         </thead>
         <tbody>
@@ -89,10 +110,14 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
+                <th scope="row">Total de habitantes</th>
                 <td class="num">210.147.125</td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam amet molestiae perspiciatis distinctio consectetur esse non quae suscipit dolorem magnam quasi dignissimos, eligendi error, totam voluptate. Aspernatur iure fugiat Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio tempora dolores impedit doloribus sequi. Laborum alias saepe recusandae eaque dolor, soluta neque, tempore dolorem unde rerum exercitationem. Iure, dolorum sequi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed corrupti fugit minus maiores minima odio, ab animi impedit, atque cum, optio delectus error a. Similique asperiores reprehenderit consectetur rerum ex Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet corporis quia quo a iure suscipit adipisci. Ratione vel, quae delectus exercitationem error saepe aut quas, tempore repellat ad sunt sequi!</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad enim repudiandae provident quaerat nobis pariatur error explicabo tempora harum architecto earum, iure corrupti omnis illo, laboriosam, sequi sed aperiam eaque. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum optio sint fugiat, quasi explicabo ipsum. Et temporibus molestias cumque quibusdam voluptatem deserunt mollitia quod, quia cum animi quasi distinctio harum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi sint maiores neque. At laudantium atque necessitatibus aliquam eligendi voluptatibus quaerat porro? Explicabo harum velit repellat accusamus amet cumque eum recusandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. In, facilis illo exercitationem harum officiis a repellendus aut eos tenetur, laborum expedita sunt delectus repellat sed hic, aperiam odio provident dolorem. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi reprehenderit culpa blanditiis magnam iusto error porro nemo, illo laudantium, dolore exercitationem doloremque autem, ex temporibus saepe quod vel perferendis ipsa.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et distinctio doloremque blanditiis mollitia voluptas! Quae harum iste eos, labore commodi quisquam nihil tempora totam debitis quis nam numquam omnis quaerat.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est quisquam at quos culpa explicabo exercitationem architecto necessitatibus nostrum ut! Eaque iste quisquam magni quibusdam dolores soluta doloribus possimus dolorem cupiditate. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro, dolorem, voluptate pariatur voluptatem possimus culpa, deleniti dolorum fugit facere totam debitis. Aliquid omnis hic, sed commodi in dolor voluptates aperiam?</p>
 </body>
 </html>

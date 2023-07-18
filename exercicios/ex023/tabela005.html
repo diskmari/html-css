@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 600px;
+            
+        }
+        caption {
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 20px;
+        }
+        th, td {
+            border: 1px solid rgb(0, 0, 0);
+            padding: 10px;
+            text-align: center;
+        }
+
+        .destaque {
+            background-color: rgb(198, 223, 245);
+        }
+
+        col.cnome {
+            background-color: aqua;
+        }
+
+        col.csexo {
+            background-color: blueviolet;
+        }
+
+        col.cgrupo {
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exercicio de Tabelas</h1>
+
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cgrupo" span="2">
+            <col class="cprof">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissao</th>
+        </tr>
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Claudio</td>
+            <td>M</td>
+            <td>30</td>
+            <td>Programador</td>
+
+        </tr>
+        <tr>
+            <td>Ana Lucia</td>
+            <td>F</td>
+            <td>29</td>
+            <td>Professora</td>
+        </tr>
+        <tr>
+            <td>Fernando</td>
+            <td>M</td>
+            <td>39</td>
+            <td>Programador</td>
+
+        </tr>
+        <tr>
+            <td>Otavio</td>
+            <td>M</td>
+            <td>30</td>
+            <td>Médico</td>
+
+        </tr>
+    </table>
+    
+</body>
+</html>
